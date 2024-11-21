@@ -1,0 +1,219 @@
+/*! RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* border: 1px solid rgb(241, 175, 228); */
+}
+
+/*! FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300&display=swap");
+
+/*? PAGE - INDEX */
+
+/* NAV BAR */
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* margin: 0px 80px; */
+}
+
+header {
+  position: sticky;
+  background-color: #ff9827;
+  top: 0%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav {
+  display: flex;
+  align-content: center;
+}
+
+header nav div a img {
+  width: 36px;
+  margin-left: 70px;
+}
+
+header nav div ul {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  margin-right: 70px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+header nav div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav div ul li a:hover {
+  font-weight: 600;
+}
+
+/* HERO SECTION */
+
+.hero {
+  height: 800px;
+  background-image: url(../images/hero5.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+/* -- h1 se reemplaza por logotipo corporativo -- */
+
+/* .hero h1 {
+  font-size: 64px;
+  margin-left: 70px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+} */
+
+.hero img {
+  margin-left: 70px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+
+.hero a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  background-color: #ff9827;
+  padding: 20px 40px;
+  margin-left: 70px;
+  border-radius: 5px;
+}
+
+/* VALORES */
+
+.valores {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-areas: "seguridad puntualidad comodidad";
+  align-content: center;
+}
+
+.valores div {
+  border: 1px solid #ffffff;
+  text-align: center;
+  height: 500px;
+  align-content: center;
+  background-color: #ff9827;
+  color: #ffffff;
+}
+
+.valores div h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.valores div p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* FLOTA */
+
+.flota {
+  height: 500px;
+  display: grid;
+  grid-template-areas: "texto van1 van2";
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.texto {
+  width: 200px;
+  height: 350px;
+}
+
+.texto h2 {
+  font-size: 2.3rem;
+  color: #ff9827;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  width: 400px;
+}
+
+.flota div img {
+  height: 200px;
+}
+
+.flota div {
+  width: 100%;
+}
+
+.van1 {
+  text-align: center;
+  align-content: center;
+}
+
+.van2 {
+  text-align: center;
+  align-content: center;
+}
+
+/* FOOTER */
+
+footer div img {
+  width: 150px;
+}
+
+footer div p {
+  font-weight: 300;
+}
+
+footer div a {
+  font-weight: 300;
+}
+
+/*? PAGE - NOSOTROS */
+
+.row div h2 {
+  font-weight: 600;
+}
+
+.col img {
+  height: 400px;
+}
+
+.valores-sub {
+  font-weight: 600px !;
+}

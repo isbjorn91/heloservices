@@ -14,6 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <header>
       <nav>
@@ -43,7 +44,7 @@
         <p class="fw-light">Te acompañamos en cada destino</p>
         <a href="./pages/cotiza.html" class="fw-bolder">Cotiza con nosotros</a>
       </div>
-      <div class="valores">
+      <!-- <div class="valores">
         <div class="seguridad">
           <h2 class="fw-bolder">SEGURIDAD</h2>
           <p>Prioridad en el bienestar y protección de cada pasajero.</p>
@@ -54,11 +55,53 @@
         </div>
         <div class="comodidad">
           <h2 class="fw-bolder">COMODIDAD</h2>
-          <p>
-            Vehículos modernos y confortables para una experiencia agradable.
-          </p>
+          <p>Vehículos modernos y confortables para una experiencia agradable.</p>
         </div>
+      </div> -->
+
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner valores">
+          <div class="carousel-item active seguridad">
+            <h2 class="fw-bolder d-block w-100">SEGURIDAD</h2>
+            <p>Prioridad en el bienestar y protección de cada pasajero.</p>
+          </div>
+          <div class="carousel-item puntualidad">
+            <h2 class="fw-bolder d-block w-100">PUNTUALIDAD</h2>
+            <p>
+              Compromiso de cumplir con los tiempos y horarios establecidos.
+            </p>
+          </div>
+          <div class="carousel-item comodidad">
+            <h2 class="fw-bolder d-block w-100">COMODIDAD</h2>
+            <p>
+              Vehículos modernos y confortables para una experiencia agradable.
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       <div class="flota">
         <div class="texto">
           <h2 class="fw-bolder">NUESTRA FLOTA</h2>

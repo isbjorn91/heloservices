@@ -24,6 +24,7 @@ header {
   position: sticky;
   background-color: #ff9827;
   top: 0%;
+  width: 100%;
 }
 
 header nav {
@@ -31,11 +32,6 @@ header nav {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-}
-
-.nav {
-  display: flex;
-  align-content: center;
 }
 
 header nav div a img {
@@ -114,10 +110,10 @@ header nav div ul li a:hover {
 
 .valores {
   width: 100%;
-  height: 500px;
-  display: grid;
-  grid-template-areas: "seguridad puntualidad comodidad";
-  align-content: center;
+  /* display: grid;
+  grid-auto-rows: 500px;
+  /* grid-template-areas: "seguridad puntualidad comodidad"; */
+  /* align-content: center; */
 }
 
 .valores div {
@@ -132,15 +128,27 @@ header nav div ul li a:hover {
 .valores div h2 {
   font-size: 2.3rem;
   margin-bottom: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
 }
 
 .valores div p {
   font-size: 1.3rem;
   font-weight: 200;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}
+
+.seguridad {
+  grid-area: seguridad;
+}
+
+.puntualidad {
+  grid-area: puntualidad;
+}
+
+.comodidad {
+  grid-area: comodidad;
 }
 
 /* FLOTA */
@@ -149,7 +157,6 @@ header nav div ul li a:hover {
   height: 500px;
   display: grid;
   grid-template-areas: "texto van1 van2";
-  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-content: center;
   margin-left: 100px;
@@ -159,6 +166,7 @@ header nav div ul li a:hover {
 .texto {
   width: 200px;
   height: 350px;
+  grid-area: texto;
 }
 
 .texto h2 {
@@ -183,11 +191,13 @@ header nav div ul li a:hover {
 .van1 {
   text-align: center;
   align-content: center;
+  grid-area: van1;
 }
 
 .van2 {
   text-align: center;
   align-content: center;
+  grid-area: van2;
 }
 
 /* FOOTER */
@@ -216,4 +226,37 @@ footer div a {
 
 .valores-sub {
   font-weight: 600px !;
+}
+
+/*! MEDIA QUERIES */
+
+@media screen and (max-width: 1229px) {
+  /* FLOTA */
+
+  .flota {
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+      "texto texto"
+      "van1 van2";
+    justify-items: center;
+    align-content: center;
+    margin: 100px;
+  }
+
+  .texto {
+    height: auto;
+  }
+
+  /* VALORES */
+
+  /* .valores {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "seguridad"
+      "puntualidad"
+      "comodidad";
+    align-content: center;
+  } */
 }

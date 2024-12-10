@@ -122,7 +122,7 @@ header nav div ul li a:hover {
   font-weight: 500;
   color: white;
   background-color: #ff9827;
-  padding: 20px 40px;
+  padding: 20px 30px;
   margin-left: 70px;
   border-radius: 5px;
 }
@@ -273,6 +273,7 @@ footer div a {
 
   .hero {
     align-items: center;
+    height: 600px;
   }
 
   .hero img {
@@ -283,12 +284,13 @@ footer div a {
 
   .hero p {
     margin-left: 0px;
-    /* font-size: 1rem; */
+    font-size: 1rem;
   }
 
   .hero a {
     margin-left: 0px;
     font-size: 1rem;
+    padding: 15px 30px;
   }
 
   .flota div img {
@@ -303,21 +305,23 @@ footer div a {
     font-size: 1rem;
   }
 
-  @media screen and (max-width: 599px) {
-    .flota {
-      display: grid;
-      grid-template-areas: "texto";
-      justify-items: center;
-      align-content: center;
-      align-items: center;
-    }
-  }
   .flota .texto h2 {
     width: 100%;
+    font-size: 1.9rem;
   }
 
   .flota .texto p {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .hero {
+    height: 500px;
+  }
+
+  .flota {
+    margin: 70px;
   }
 }
 

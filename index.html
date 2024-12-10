@@ -14,9 +14,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <header>
-      <nav>
+      <!-- <nav>
         <div>
           <a href="index.html">
             <img
@@ -32,6 +33,48 @@
             <li><a href="./pages/ayuda.html">Ayuda</a></li>
           </ul>
         </div>
+      </nav> -->
+
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./images/logo-white-nav.png"
+              alt="logo helo services en color blanco"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./pages/nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -43,22 +86,51 @@
         <p class="fw-light">Te acompañamos en cada destino</p>
         <a href="./pages/cotiza.html" class="fw-bolder">Cotiza con nosotros</a>
       </div>
-      <div class="valores">
-        <div class="seguridad">
-          <h2 class="fw-bolder">SEGURIDAD</h2>
-          <p>Prioridad en el bienestar y protección de cada pasajero.</p>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner valores overflow-auto">
+          <div class="carousel-item active seguridad">
+            <h2 class="fw-bolder d-block">SEGURIDAD</h2>
+            <p class="w-100 px-5">
+              Prioridad en el bienestar y protección de cada pasajero.
+            </p>
+          </div>
+          <div class="carousel-item puntualidad">
+            <h2 class="fw-bolder d-block">PUNTUALIDAD</h2>
+            <p class="w-100 px-5">
+              Compromiso de cumplir con los tiempos y horarios establecidos.
+            </p>
+          </div>
+          <div class="carousel-item comodidad">
+            <h2 class="fw-bolder d-block w-auto">COMODIDAD</h2>
+            <p class="w-100 px-5">
+              Vehículos modernos y confortables para una experiencia agradable.
+            </p>
+          </div>
         </div>
-        <div class="puntualidad">
-          <h2 class="fw-bolder">PUNTUALIDAD</h2>
-          <p>Compromiso de cumplir con los tiempos y horarios establecidos.</p>
-        </div>
-        <div class="comodidad">
-          <h2 class="fw-bolder">COMODIDAD</h2>
-          <p>
-            Vehículos modernos y confortables para una experiencia agradable.
-          </p>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       <div class="flota">
         <div class="texto">
           <h2 class="fw-bolder">NUESTRA FLOTA</h2>
@@ -69,23 +141,28 @@
           </p>
         </div>
         <div class="van1">
-          <img src="./images/h1-modelos.png" alt="modelo hyundai h1" />
+          <img src="./images/h1-modelos-rs.png" alt="modelo hyundai h1" />
         </div>
         <div class="van2">
-          <img src="./images/staria-modelos.png" alt="modelo hyundai staria" />
+          <img
+            src="./images/staria-modelos-rs.png"
+            alt="modelo hyundai staria"
+          />
         </div>
       </div>
     </main>
     <footer>
       <div class="container-fluid">
-        <div class="row p-5 bg-secondary text-white">
-          <div class="col-xs-12 col-lg-3 mx-auto p-3">
+        <div
+          class="row p-5 bg-secondary text-white text-md-center text-sm-center"
+        >
+          <div class="col-xs-12 col-lg-3 mx-auto p-3 mb-4">
             <img
               src="./images/logo-white-footer.png"
               alt="logo helo services en color blanco"
             />
           </div>
-          <div class="col-xs-12 col-lg-3">
+          <div class="col-xs-12 col-lg-3 mb-3">
             <p class="h3 fw-bolder mb-4">Nosotros</p>
             <div class="mb-3">
               <a class="text-white text-decoration-none" href="">Misión</a>
@@ -97,12 +174,12 @@
               <a class="text-white text-decoration-none" href="">Valores</a>
             </div>
           </div>
-          <div class="col-xs-12 col-lg-3">
+          <div class="col-xs-12 col-lg-3 mb-3">
             <p class="h3 fw-bolder mb-4">Nuestros Servicios</p>
             <p>Nuestra Flota</p>
             <p>Nuestros clientes</p>
           </div>
-          <div class="col-xs-12 col-lg-3">
+          <div class="col-xs-12 col-lg-3 mb-3">
             <p class="h3 fw-bolder mb-4">Contáctanos</p>
             <p>Baizán 5153, Providencia</p>
             <p>+56 2 24213146</p>

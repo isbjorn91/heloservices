@@ -24,6 +24,11 @@ header {
   position: sticky;
   background-color: #ff9827;
   top: 0%;
+  width: 100%;
+}
+
+.bg-body-tertiary {
+  background-color: #ff9827 !important;
 }
 
 header nav {
@@ -31,11 +36,6 @@ header nav {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-}
-
-.nav {
-  display: flex;
-  align-content: center;
 }
 
 header nav div a img {
@@ -55,6 +55,23 @@ header nav div ul {
 header nav div ul li a {
   text-decoration: none;
   color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-toggler {
+  border: solid rgb(255 255 255);
+  margin-right: 70px;
+}
+
+.navbar-nav {
+  background-color: #ff9827;
 }
 
 header nav div ul li a:hover {
@@ -114,10 +131,6 @@ header nav div ul li a:hover {
 
 .valores {
   width: 100%;
-  height: 500px;
-  display: grid;
-  grid-template-areas: "seguridad puntualidad comodidad";
-  align-content: center;
 }
 
 .valores div {
@@ -132,33 +145,28 @@ header nav div ul li a:hover {
 .valores div h2 {
   font-size: 2.3rem;
   margin-bottom: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .valores div p {
   font-size: 1.3rem;
   font-weight: 200;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: auto;
 }
 
 /* FLOTA */
 
 .flota {
-  height: 500px;
+  margin: 100px;
   display: grid;
   grid-template-areas: "texto van1 van2";
-  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .texto {
   width: 200px;
   height: 350px;
+  grid-area: texto;
 }
 
 .texto h2 {
@@ -174,6 +182,8 @@ header nav div ul li a:hover {
 
 .flota div img {
   height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 .flota div {
@@ -183,11 +193,13 @@ header nav div ul li a:hover {
 .van1 {
   text-align: center;
   align-content: center;
+  grid-area: van1;
 }
 
 .van2 {
   text-align: center;
   align-content: center;
+  grid-area: van2;
 }
 
 /* FOOTER */
@@ -216,4 +228,98 @@ footer div a {
 
 .valores-sub {
   font-weight: 600px !;
+}
+
+/*! MEDIA QUERIES */
+
+@media screen and (max-width: 1280px) {
+  /* FLOTA */
+
+  .flota {
+    display: grid;
+    grid-template-areas:
+      "texto texto"
+      "van1 van2";
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .texto {
+    height: auto;
+    text-align: center;
+    justify-items: center;
+  }
+
+  /* VALORES */
+}
+
+@media screen and (max-width: 991px) {
+  header nav div ul {
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style: none;
+    margin-right: 0px;
+  }
+
+  footer div img {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  /* FLOTA */
+
+  .hero {
+    align-items: center;
+  }
+
+  .hero img {
+    margin-left: 0px;
+    height: auto;
+    width: 300px;
+  }
+
+  .hero p {
+    margin-left: 0px;
+    /* font-size: 1rem; */
+  }
+
+  .hero a {
+    margin-left: 0px;
+    font-size: 1rem;
+  }
+
+  .flota div img {
+    display: none;
+  }
+
+  .valores div h2 {
+    font-size: 1.9rem;
+  }
+
+  .valores div p {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 599px) {
+    .flota {
+      display: grid;
+      grid-template-areas: "texto";
+      justify-items: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .flota .texto h2 {
+    width: 100%;
+  }
+
+  .flota .texto p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 378px) {
 }

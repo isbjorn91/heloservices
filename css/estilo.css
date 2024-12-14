@@ -1,0 +1,36 @@
+.bg-body-tertiary {
+  background-color: #ff9827 !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body header {
+  position: sticky;
+  top: 0%;
+}
+body header nav {
+  height: 70px;
+}
+body header nav div a img {
+  width: 36px;
+  margin-left: 70px;
+}
+body header nav div .navbar-toggler {
+  border: solid 1px rgb(255, 255, 255) !important;
+  margin-right: 70px;
+}
+body header nav div ul {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  margin-right: 70px;
+  align-items: center;
+  margin-bottom: 0;
+}
+body header nav div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,8 +1,6 @@
-@import "./_base/_funcionalidades.scss";
+@import "./_base/funcionalidades";
 @import "./_base/generales";
+@import "./_components/header";
+@import "./_components/main";
+@import "./_components/footer";
 @import "./_base/queries";
-@import "./_components/index";
-@import "./_components/nosotros";
-@import "./_components/_servicios.scss";
-@import "./_components/_ayuda.scss";
-@import "./_components/_cotiza.scss";

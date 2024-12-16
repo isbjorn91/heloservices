@@ -191,6 +191,65 @@ body footer div a {
   width: 100%;
 }
 
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px;
+}
+.mision-vision .mision {
+  max-width: 750px;
+  margin-right: 100px;
+}
+.mision-vision .mision h2 {
+  margin-bottom: 20px;
+}
+.mision-vision .vision {
+  max-width: 750px;
+  margin-right: 100px;
+}
+.mision-vision .vision h2 {
+  margin-bottom: 20px;
+}
+
+.nuestros-valores {
+  margin: 70px;
+  margin-bottom: 200px;
+  column-gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px 600px;
+}
+.nuestros-valores .n-valores {
+  grid-column: 1/4;
+  align-content: center;
+}
+.nuestros-valores .n-valores h2 {
+  text-align: center;
+}
+.nuestros-valores .seguridad img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.nuestros-valores .seguridad h3 {
+  margin-bottom: 25px;
+}
+.nuestros-valores .calidad img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.nuestros-valores .calidad h3 {
+  margin-bottom: 25px;
+}
+.nuestros-valores .compromiso img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.nuestros-valores .compromiso h3 {
+  margin-bottom: 25px;
+}
 @media screen and (max-width: 1280px) {
   body main .flota {
     display: grid;
@@ -285,6 +344,17 @@ body footer div a {
   }
   .nuestra-historia .n-texto p {
     text-align: center;
+  }
+  .mision-vision {
+    gap: 100px;
+  }
+  .mision-vision .mision {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .mision-vision .vision {
+    text-align: center;
+    margin-right: 0px;
   }
 }
 

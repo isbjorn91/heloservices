@@ -224,3 +224,84 @@ body {
     }
   }
 }
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px;
+  .mision {
+    max-width: 750px;
+    margin-right: 100px;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .vision {
+    max-width: 750px;
+    margin-right: 100px;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+.nuestros-valores {
+  margin: 70px;
+  margin-bottom: 200px;
+  column-gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px 600px;
+  .n-valores {
+    grid-column: 1 / 4;
+    align-content: center;
+    h2 {
+      text-align: center;
+    }
+  }
+  .seguridad {
+    // margin: 0px 70px;
+
+    img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+    }
+
+    p {
+    }
+  }
+  .calidad {
+    // margin: 0px 70px;
+    img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+    }
+
+    p {
+    }
+  }
+  .compromiso {
+    // margin: 0px 70px;
+
+    img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+    }
+
+    p {
+    }
+  }
+}

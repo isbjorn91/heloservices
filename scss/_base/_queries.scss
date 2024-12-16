@@ -113,4 +113,17 @@
       }
     }
   }
+
+  .mision-vision {
+    gap: 100px;
+    .mision {
+      text-align: center;
+      margin-right: 0px;
+    }
+
+    .vision {
+      text-align: center;
+      margin-right: 0px;
+    }
+  }
 }

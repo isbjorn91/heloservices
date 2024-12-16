@@ -1,0 +1,129 @@
+@media screen and (max-width: 1280px) {
+  body main .flota {
+    display: grid;
+    grid-template-areas:
+      "texto texto"
+      "van1 van2";
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  body main .flota .texto {
+    height: auto;
+    text-align: center;
+    justify-items: center;
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header nav div .navbar-nav {
+    background-color: #ff9827;
+  }
+
+  header nav div ul {
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style: none;
+    margin-right: 0px;
+  }
+
+  footer div div div a img {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  body main .hero {
+    align-items: center;
+    height: 600px;
+  }
+
+  body main .hero img {
+    margin-left: 0px;
+    height: auto;
+    width: 300px;
+  }
+
+  body main .hero p {
+    margin-left: 0px;
+    font-size: 1rem;
+  }
+
+  body main .hero a {
+    margin-left: 0px;
+    font-size: 1rem;
+    padding: 15px 30px;
+  }
+
+  body main .flota {
+    row-gap: 0px;
+  }
+
+  body main .flota div img {
+    display: none;
+  }
+
+  body main .flota .texto h2 {
+    width: 100%;
+    font-size: 1.9rem;
+  }
+
+  body main .flota .texto p {
+    width: 100%;
+  }
+
+  body main div .valores div h2 {
+    font-size: 1.9rem;
+  }
+
+  body main div .valores div p {
+    font-size: 1rem;
+  }
+}
+
+// NOSOTROS
+
+@media screen and (max-width: 1500px) {
+  .nuestra-historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 0px;
+    justify-items: center;
+    .n-img {
+      order: 1;
+      img {
+        height: 550px;
+        width: 100vw;
+      }
+    }
+    .n-texto {
+      margin: 70px 70px;
+      max-width: 100%;
+
+      order: 2;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .mision-vision {
+    gap: 100px;
+    .mision {
+      text-align: center;
+      margin-right: 0px;
+    }
+
+    .vision {
+      text-align: center;
+      margin-right: 0px;
+    }
+  }
+}

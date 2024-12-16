@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-body-tertiary {
+  background-color: #ff9827 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-toggler {
+  border: solid 1px rgb(255, 255, 255) !important;
+  margin-right: 70px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body header {
+  position: sticky;
+  top: 0%;
+}
+body header nav {
+  height: 70px;
+}
+body header nav div a img {
+  width: 36px;
+  margin-left: 70px;
+}
+body header div ul {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  margin-right: 70px;
+  align-items: center;
+  margin-bottom: 0;
+}
+body header div ul li a {
+  text-decoration: none;
+  color: white;
+}
+body header div ul li .nav-link {
+  color: white;
+}
+body main .hero {
+  height: 800px;
+  background-image: url(../images/hero5.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+body main .hero img {
+  margin-left: 70px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+body main .hero p {
+  font-size: 1.3rem;
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+body main .hero a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  background-color: #ff9827;
+  padding: 20px 30px;
+  margin-left: 70px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+body main .hero a:hover {
+  background-color: #ffa23f;
+}
+body main div .valores div {
+  border: 1px solid #ffffff;
+  text-align: center;
+  height: 500px;
+  align-content: center;
+  background-color: #ff9827;
+  color: #ffffff;
+}
+body main div .valores div h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+body main div .valores div p {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+body main .flota {
+  margin: 100px 70px;
+  display: grid;
+  grid-template-areas: "texto van1 van2";
+  justify-items: center;
+  align-content: center;
+}
+body main .flota .texto {
+  height: 350px;
+  grid-area: texto;
+  margin-right: 50px;
+}
+body main .flota .texto h2 {
+  font-size: 2.3rem;
+  color: #ff9827;
+  width: 400px;
+  margin-bottom: 20px;
+}
+body main .flota .texto p {
+  width: 400px;
+  margin-bottom: 70px;
+}
+body main .flota .texto a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ff9827;
+  background-color: white;
+  border-color: #ff9827;
+  border: 2px solid;
+  padding: 20px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+body main .flota .van1 {
+  text-align: center;
+  align-content: center;
+  grid-area: van1;
+}
+body main .flota .van1 img {
+  height: 200px;
+  width: 100%;
+  height: auto;
+}
+body main .flota .van2 {
+  text-align: center;
+  align-content: center;
+  grid-area: van2;
+}
+body main .flota .van2 img {
+  height: 200px;
+  width: 100%;
+  height: auto;
+}
+body footer div img {
+  width: 150px;
+}
+body footer div p {
+  font-weight: 300;
+}
+body footer div a {
+  font-weight: 300;
+  color: white;
+}
+
+.nuestra-historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px 70px;
+}
+.nuestra-historia .n-texto {
+  max-width: 750px;
+  margin-right: 100px;
+}
+.nuestra-historia .n-texto h2 {
+  margin-bottom: 20px;
+}
+.nuestra-historia .n-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px;
+}
+.mision-vision .mision {
+  max-width: 750px;
+  margin-right: 100px;
+}
+.mision-vision .mision h2 {
+  margin-bottom: 20px;
+}
+.mision-vision .vision {
+  max-width: 750px;
+  margin-right: 100px;
+}
+.mision-vision .vision h2 {
+  margin-bottom: 20px;
+}
+
+.nuestros-valores {
+  margin: 70px;
+  margin-bottom: 200px;
+  column-gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px 600px;
+}
+.nuestros-valores .n-valores {
+  grid-column: 1/4;
+  align-content: center;
+}
+.nuestros-valores .n-valores h2 {
+  text-align: center;
+}
+.nuestros-valores .seguridad img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.nuestros-valores .seguridad h3 {
+  margin-bottom: 25px;
+}
+.nuestros-valores .calidad img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.nuestros-valores .calidad h3 {
+  margin-bottom: 25px;
+}
+.nuestros-valores .compromiso img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.nuestros-valores .compromiso h3 {
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 1280px) {
+  body main .flota {
+    display: grid;
+    grid-template-areas: "texto texto" "van1 van2";
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  body main .flota .texto {
+    height: auto;
+    text-align: center;
+    justify-items: center;
+    margin: 20px 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header nav div .navbar-nav {
+    background-color: #ff9827;
+  }
+  header nav div ul {
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style: none;
+    margin-right: 0px;
+  }
+  footer div div div a img {
+    width: 125px;
+  }
+}
+@media screen and (max-width: 749px) {
+  body main .hero {
+    align-items: center;
+    height: 600px;
+  }
+  body main .hero img {
+    margin-left: 0px;
+    height: auto;
+    width: 300px;
+  }
+  body main .hero p {
+    margin-left: 0px;
+    font-size: 1rem;
+  }
+  body main .hero a {
+    margin-left: 0px;
+    font-size: 1rem;
+    padding: 15px 30px;
+  }
+  body main .flota {
+    row-gap: 0px;
+  }
+  body main .flota div img {
+    display: none;
+  }
+  body main .flota .texto h2 {
+    width: 100%;
+    font-size: 1.9rem;
+  }
+  body main .flota .texto p {
+    width: 100%;
+  }
+  body main div .valores div h2 {
+    font-size: 1.9rem;
+  }
+  body main div .valores div p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .nuestra-historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 0px;
+    justify-items: center;
+  }
+  .nuestra-historia .n-img {
+    order: 1;
+  }
+  .nuestra-historia .n-img img {
+    height: 550px;
+    width: 100vw;
+  }
+  .nuestra-historia .n-texto {
+    margin: 70px 70px;
+    max-width: 100%;
+    order: 2;
+  }
+  .nuestra-historia .n-texto h2 {
+    text-align: center;
+  }
+  .nuestra-historia .n-texto p {
+    text-align: center;
+  }
+  .mision-vision {
+    gap: 100px;
+  }
+  .mision-vision .mision {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .mision-vision .vision {
+    text-align: center;
+    margin-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -11,7 +11,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- SCSS LINK -->
+    <link rel="stylesheet" href="../css/estilo.css" />
   </head>
 
   <body>
@@ -44,56 +46,77 @@
               <a
                 class="nav-link"
                 aria-current="page"
-                href="./pages/nosotros.html"
+                href="../pages/nosotros.html"
                 >Nosotros</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              <a class="nav-link" href="../pages/servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+              <a class="nav-link" href="../pages/ayuda.html">Ayuda</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <h2>COTIZA CON NOSOTROS</h2>
-      <div>
-        <form action="">
+      <div class="s-cotiza">
+        <h2 class="fw-bolder">COTIZA CON NOSOTROS</h2>
+        <div class="selectores">
+          <form action="">
+            <div>
+              <label for="nombre"
+                >Ingresa tu nombre<input
+                  type="text"
+                  placeholder="Nombre"
+                  name="nombre"
+                  required
+                />
+              </label>
+
+              <label for="telefono"
+                >Ingresa tu teléfono<input
+                  type="text"
+                  placeholder="+56 9"
+                  name="numero"
+                  required
+              /></label>
+
+              <label for="correo"
+                >Ingresa tu correo<input
+                  type="text"
+                  placeholder="Correo electrónico"
+                  name="correo"
+                  required
+              /></label>
+
+              <label for="servicios"
+                >Seleciona el servicio:<select name="servicios">
+                  <optgroup label="Seleccionar Servicio">
+                    <option value="aeropuerto">Aeropuerto - Ciudad</option>
+                    <option value="faena">Faena Minera</option>
+                    <option value="carga">Cargas - Documentos</option>
+                    <option value="ciudad">Ciudad</option>
+                  </optgroup>
+                </select></label
+              >
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Agrega tus comentarios</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+          </form>
           <div>
-            <label for="servicios">Seleciona el servicio:</label>
-            <select name="servicios">
-              <optgroup label="Seleccionar Servicio">
-                <option value="aeropuerto">Aeropuerto - Ciudad</option>
-                <option value="faena">Faena Minera</option>
-                <option value="carga">Cargas - Documentos</option>
-                <option value="ciudad">Ciudad</option>
-              </optgroup>
-            </select>
-            <div>
-              <label for="nombre">Ingresa tu nombre</label>
-              <input type="text" placeholder="Nombre" name="nombre" required />
-            </div>
-            <div>
-              <label for="telefono">Ingresa tu teléfono</label>
-              <input type="text" placeholder="+56 9" name="numero" required />
-            </div>
-            <div>
-              <label for="correo">Ingresa tu correo</label>
-              <input
-                type="text"
-                placeholder="Correo electrónico"
-                name="correo"
-                required
-              />
-            </div>
-            <div>
-              <a href="">Cotizar</a>
-            </div>
+            <a href="">Cotizar</a>
           </div>
-        </form>
+        </div>
       </div>
     </main>
   </body>

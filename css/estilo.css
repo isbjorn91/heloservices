@@ -236,71 +236,95 @@ body footer div a {
   margin-bottom: 25px;
 }
 
+main .hero-servicios {
+  width: 100vw;
+  margin: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 main .n-servicios {
   margin: 70px 70px;
 }
 main .n-servicios h2 {
   margin-bottom: 50px;
 }
-main .n-servicios .tabs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main .n-servicios .tabs div {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin: 0px 70px;
-}
-main .n-servicios .linea {
-  display: block;
-  height: 1px;
-  border: 2px solid;
-  border-color: black;
-  margin-bottom: 35px;
-  padding: 0;
-}
-main .contenido {
-  margin: 0px 70px;
-  gap: 150px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-main .contenido .cont-img img {
-  height: auto;
-  max-width: 100%;
-}
-main .cont-texto {
-  max-width: 600px;
-}
-main .cont-texto h3 {
-  margin-bottom: 20px;
-}
-main .cont-texto p {
-  margin-bottom: 50px;
-}
-main .cont-texto hr {
-  margin-top: 20px;
-  margin-bottom: 80px;
-}
-main .cont-texto a {
-  margin-top: 30px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: white;
-  background-color: #ff9827;
-  padding: 20px 30px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-main .n-clientes {
-  margin: 150px 70px;
-}
-main .n-clientes h2 {
+main .n-servicios p {
   margin-bottom: 70px;
 }
-main .n-clientes .logo-clientes {
+main .n-servicios .cards-servicios {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .n-servicios .cards-servicios .card-aeropuerto {
+  height: 200px;
+  width: 200px;
+  column-gap: 25px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  align-items: center;
+  justify-content: center;
+}
+main .n-servicios .cards-servicios .card-aeropuerto img {
+  margin: 20px;
+  height: 70px;
+  width: 70px;
+}
+main .n-servicios .cards-servicios .card-minera {
+  height: 200px;
+  width: 200px;
+  column-gap: 25px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  align-items: center;
+  justify-content: center;
+}
+main .n-servicios .cards-servicios .card-minera img {
+  margin: 20px;
+  height: 70px;
+  width: 70px;
+}
+main .n-servicios .cards-servicios .card-carga {
+  height: 200px;
+  width: 200px;
+  column-gap: 25px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  align-items: center;
+  justify-content: center;
+}
+main .n-servicios .cards-servicios .card-carga img {
+  margin: 20px;
+  height: 70px;
+  width: 70px;
+}
+main .n-servicios .cards-servicios .card-ciudad {
+  height: 200px;
+  width: 200px;
+  column-gap: 25px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  align-items: center;
+  justify-content: center;
+}
+main .n-servicios .cards-servicios .card-ciudad img {
+  margin: 20px;
+  height: 70px;
+  width: 70px;
+}
+
+.n-clientes {
+  margin: 150px 70px;
+}
+.n-clientes h2 {
+  margin-bottom: 70px;
+}
+.n-clientes .logo-clientes {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -308,7 +332,7 @@ main .n-clientes .logo-clientes {
   align-items: center;
   gap: 50px;
 }
-main .n-clientes .logo-clientes img {
+.n-clientes .logo-clientes img {
   height: auto;
   width: 20%;
 }
@@ -366,76 +390,6 @@ main .s-ayuda div div a:hover {
   font-weight: 900;
 }
 
-@media screen and (max-width: 1280px) {
-  body main .flota {
-    display: grid;
-    grid-template-areas: "texto texto" "van1 van2";
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    row-gap: 20px;
-  }
-  body main .flota .texto {
-    height: auto;
-    text-align: center;
-    justify-items: center;
-    margin: 20px 0px;
-  }
-}
-@media screen and (max-width: 991px) {
-  header nav div .navbar-nav {
-    background-color: #ff9827;
-  }
-  header nav div ul {
-    gap: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    list-style: none;
-    margin-right: 0px;
-  }
-  footer div div div a img {
-    width: 125px;
-  }
-}
-@media screen and (max-width: 749px) {
-  body main .hero {
-    align-items: center;
-    height: 600px;
-  }
-  body main .hero img {
-    margin-left: 0px;
-    height: auto;
-    width: 300px;
-  }
-  body main .hero p {
-    margin-left: 0px;
-    font-size: 1rem;
-  }
-  body main .hero a {
-    margin-left: 0px;
-    font-size: 1rem;
-    padding: 15px 30px;
-  }
-  body main .flota {
-    row-gap: 0px;
-  }
-  body main .flota div img {
-    display: none;
-  }
-  body main .flota .texto h2 {
-    width: 100%;
-    font-size: 1.9rem;
-  }
-  body main .flota .texto p {
-    width: 100%;
-  }
-  body main div .valores div h2 {
-    font-size: 1.9rem;
-  }
-  body main div .valores div p {
-    font-size: 1rem;
-  }
-}
 @media screen and (max-width: 1500px) {
   .nuestra-historia {
     display: grid;
@@ -475,6 +429,31 @@ main .s-ayuda div div a:hover {
   .nuestros-valores {
     text-align: center;
   }
+  body main .n-servicios h2 {
+    text-align: center;
+  }
+  body main .n-servicios p {
+    text-align: center;
+  }
+  .n-clientes h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body main .flota {
+    display: grid;
+    grid-template-areas: "texto texto" "van1 van2";
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  body main .flota .texto {
+    height: auto;
+    text-align: center;
+    justify-items: center;
+    margin: 20px 0px;
+  }
 }
 @media screen and (max-width: 1200px) {
   body main .nuestros-valores {
@@ -498,6 +477,100 @@ main .s-ayuda div div a:hover {
   }
   body main .nuestros-valores .compromiso {
     grid-column: 2/4;
+  }
+  body main .n-servicios .cards-servicios {
+    row-gap: 25px;
+    column-gap: 10px;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-minera {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-minera img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-carga {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-carga img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-clientes .logo-clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main .n-clientes .logo-clientes img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  header nav div .navbar-nav {
+    background-color: #ff9827;
+  }
+  header nav div ul {
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style: none;
+    margin-right: 0px;
+  }
+  footer div div div a img {
+    width: 125px;
+  }
+  body main .n-servicios .cards-servicios {
+    row-gap: 25px;
+    column-gap: 10px;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto {
+    height: 150px;
+    width: 150px;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-minera {
+    height: 150px;
+    width: 150px;
+  }
+  body main .n-servicios .cards-servicios .card-minera img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-carga {
+    height: 150px;
+    width: 150px;
+  }
+  body main .n-servicios .cards-servicios .card-carga img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad {
+    height: 150px;
+    width: 150px;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad img {
+    height: 40px;
+    width: 40px;
   }
 }
 @media screen and (max-width: 890px) {
@@ -524,6 +597,89 @@ main .s-ayuda div div a:hover {
   }
   body main .nuestros-valores .compromiso {
     grid-column: 2/5;
+  }
+  body main .n-servicios .cards-servicios {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 10px;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-minera {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-minera img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-carga {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-carga img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad {
+    height: 200px;
+    width: 200px;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad img {
+    height: 40px;
+    width: 40px;
+  }
+  .n-clientes .logo-clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .n-clientes .logo-clientes img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 749px) {
+  body main .hero {
+    align-items: center;
+    height: 600px;
+  }
+  body main .hero img {
+    margin-left: 0px;
+    height: auto;
+    width: 300px;
+  }
+  body main .hero p {
+    margin-left: 0px;
+    font-size: 1rem;
+  }
+  body main .hero a {
+    margin-left: 0px;
+    font-size: 1rem;
+    padding: 15px 30px;
+  }
+  body main .flota {
+    row-gap: 0px;
+  }
+  body main .flota div img {
+    display: none;
+  }
+  body main .flota .texto h2 {
+    width: 100%;
+    font-size: 1.9rem;
+  }
+  body main .flota .texto p {
+    width: 100%;
+  }
+  body main div .valores div h2 {
+    font-size: 1.9rem;
+  }
+  body main div .valores div p {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -569,6 +725,43 @@ main .s-ayuda div div a:hover {
   }
   body main .nuestros-valores .compromiso {
     grid-column: 1/2;
+  }
+  body main .n-servicios .cards-servicios {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    column-gap: 10px;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto {
+    height: 150px;
+    width: 100%;
+  }
+  body main .n-servicios .cards-servicios .card-aeropuerto img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-minera {
+    height: 150px;
+    width: 100%;
+  }
+  body main .n-servicios .cards-servicios .card-minera img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-carga {
+    height: 150px;
+    width: 100%;
+  }
+  body main .n-servicios .cards-servicios .card-carga img {
+    height: 40px;
+    width: 40px;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad {
+    height: 150px;
+    width: 100%;
+  }
+  body main .n-servicios .cards-servicios .card-ciudad img {
+    height: 40px;
+    width: 40px;
   }
 }
 
